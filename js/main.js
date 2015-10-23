@@ -7,12 +7,12 @@ $(document).ready(function() {
 	var vertical = $(window).height() + horizontal;
 	// sets the body height to the vertical for scrolling
 	$('body').css('height', vertical);
-	// console.log(px);
+
 
 	$(window).scroll(function() {
 		//determine how many pixels from the top is scrolled
 		var px = $(window).scrollTop();
-
+		console.log(px);
 		$('.hills').css('left', - px)
 
 	});
